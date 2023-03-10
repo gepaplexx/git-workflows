@@ -1,6 +1,6 @@
 ARG VERSION=latest
 
-FROM golang:1.19-alpine as BUILD
+FROM golang:1.20-alpine as BUILD
 ARG VERSION
 
 RUN apk add --no-cache gcc g++ make
