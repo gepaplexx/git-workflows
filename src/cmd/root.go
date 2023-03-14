@@ -51,6 +51,7 @@ func init() {
 	rootCmd.PersistentFlags().StringVar(&Config.FromBranch, "from-branch", "main", "Base branch for argo-create | Branch from which to deploy from")
 	rootCmd.PersistentFlags().StringVar(&Config.ToBranch, "to-branch", "", "Target brancht for deployments")
 
+	updateCmd.PersistentFlags().StringVar(&Config.CommitRef, "commit-ref", "no reference supplied", "Reference to original commit that triggered the workflow")
 	deleteCmd.PersistentFlags().BoolVarP(&Config.Force, "force", "f", false, "allows deletion of protected environments. Remember: with great power comes great responsibility!")
 
 	deployCmd.PersistentFlags().BoolVar(&Config.ResourcesOnly, "resources-only", false, "only deploy resources, no application")

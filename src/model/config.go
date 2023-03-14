@@ -24,6 +24,7 @@ type Config struct {
 	Force           bool     `json:"force"`
 	ResourcesOnly   bool     `json:"resources_only"`
 	Descriptor      string   `json:"descriptor"`
+	CommitRef       string   `json:"commit_ref"`
 }
 
 func (c *Config) ApplicationClonePath() string {

@@ -27,7 +27,7 @@ func UpdateArgoApplicationSet(c *model.Config, repo *git.Repository) {
 	logger.Debug("Updating file: %s", filePath)
 	updateImageTag(c, filePath)
 
-	commitAndPush(c, wt, repo, fmt.Sprintf("updated image tag to %s", c.ImageTag))
+	commitAndPush(c, wt, repo, fmt.Sprintf("updated image tag to %s\nTriggered by ref: %s", c.ImageTag, c.CommitRef))
 }
 
 func ArgoCreateEnvironment(c *model.Config, repo *git.Repository) {
