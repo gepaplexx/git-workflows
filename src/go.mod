@@ -6,7 +6,7 @@ require (
 	github.com/go-git/go-billy/v5 v5.5.0
 	github.com/go-git/go-git/v5 v5.11.0
 	github.com/otiai10/copy v1.14.0
-	github.com/qjebbs/go-jsons v0.0.0-20221222033332-a534c5fc1c4c
+	github.com/qjebbs/go-jsons v1.0.0-alpha.6
 	github.com/sirupsen/logrus v1.9.3
 	github.com/spf13/cobra v1.8.0
 	gopkg.in/yaml.v3 v3.0.1
